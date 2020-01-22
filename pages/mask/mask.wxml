@@ -1,0 +1,6 @@
+<!--pages/mask/mask.wxml-->
+
+<view class="btnContainer">
+<!-- 需要使用 button 来授权登录 -->
+  <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo='onAuth'>授权登录</button>
+</view>
