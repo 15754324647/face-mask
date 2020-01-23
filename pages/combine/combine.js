@@ -10,7 +10,9 @@ Page({
     wx.getImageInfo({
       src:app.globalData.bgPic,
       success: res => {
+          console.log(111111)
           this.bgPic=res.path
+        console.log(111111)
         this.draw();
       }
     })
